@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AllMembersCell" id="gTV-IL-0wX" customClass="AllMembersCell" customModule="iOSLove" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-hs-J5z">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="169"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehO-YR-Mma" customClass="GradientView" customModule="iOSLove" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="173" height="169"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="toColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fromColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                <point key="value" x="0.5" y="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                <point key="value" x="0.5" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbX-jR-dpO">
+                        <rect key="frame" x="4" y="144" width="165" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tbX-jR-dpO" secondAttribute="trailing" constant="4" id="4Xi-YR-i65"/>
+                <constraint firstItem="NYm-hs-J5z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5D3-DS-6UL"/>
+                <constraint firstAttribute="bottom" secondItem="NYm-hs-J5z" secondAttribute="bottom" id="7yx-Xu-uI2"/>
+                <constraint firstItem="tbX-jR-dpO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="8VE-eD-ATF"/>
+                <constraint firstAttribute="trailing" secondItem="ehO-YR-Mma" secondAttribute="trailing" id="AG3-Bo-ezW"/>
+                <constraint firstAttribute="bottom" secondItem="ehO-YR-Mma" secondAttribute="bottom" id="JaR-DQ-ms8"/>
+                <constraint firstItem="ehO-YR-Mma" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RZI-DA-v3x"/>
+                <constraint firstItem="ehO-YR-Mma" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rv6-FN-diU"/>
+                <constraint firstAttribute="bottom" secondItem="tbX-jR-dpO" secondAttribute="bottom" constant="4" id="YLh-qB-CdR"/>
+                <constraint firstItem="NYm-hs-J5z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dhd-uw-axj"/>
+                <constraint firstAttribute="trailing" secondItem="NYm-hs-J5z" secondAttribute="trailing" id="mT8-Lu-qSX"/>
+            </constraints>
+            <size key="customSize" width="173" height="169"/>
+            <connections>
+                <outlet property="nameLabel" destination="tbX-jR-dpO" id="kYf-aQ-7AA"/>
+                <outlet property="thumbImageView" destination="NYm-hs-J5z" id="7gm-Vz-tBU"/>
+            </connections>
+            <point key="canvasLocation" x="-66.400000000000006" y="72.413793103448285"/>
+        </collectionViewCell>
+    </objects>
+</document>
